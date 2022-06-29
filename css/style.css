@@ -1,15 +1,17 @@
 body {
-  padding: 10px;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
 }
 
 ::placeholder {
   text-align: center;
   font-size: 14px;
   color: gray;
-  background-repeat: no-repeat;
-  background-image: url("/assets/search-solid.svg");
   background-position: 40%;
   background-size: 6%;
+  background-image: url("/assets/search-solid.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  border-radius: 8px;
 }
 
 input.empty {
@@ -20,10 +22,15 @@ input.empty {
   background-color: #fafafa;
 }
 
-/* .rmenu {
-  margin-left: 5px;
-  margin-top: 2px;
-} */
+#sticky-sidebar {
+  position: sticky;
+  top: 80px;
+}
+
+.rightpanel {
+  background-color: white;
+  border: none;
+}
 
 .postuserfont {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
